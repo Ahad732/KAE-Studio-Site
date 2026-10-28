@@ -1,31 +1,48 @@
 <nav>
     
     <a href="/" class="homebtn navbtn">Home</a>
-    <a href="/about" class="aboutbtn navbtn">About</a>
+    <div class="nav-stuff">
+        <a href="/about" class="aboutbtn navbtn">About</a>
+        <a href="/products" class="productsbtn navbtn">Products</a>
+        <a href="/contact" class="contactbtn navbtn">Contact Us</a>
+    </div>
     
-    <hr>
 </nav>
+<hr>
 
 <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
     nav{
-        /* background-color: gray; */
-        display: flexbox;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1% 2%;
+    }
+    hr{
+        width: 100%;
+        margin: 0;
+    }
+    .nav-stuff{
+        display: flex;
+        /* padding: 0 10%; */
+        gap: 10vw;
     }
     .navbtn{
         color: blue;
         text-decoration: none;
-    }
-    .navbtn:hover{
-        color: magenta;
-        text-decoration: underline;
-    
+        /* font-size: 100%; */
+        /* padding: 0 10%; */
     }
     .homebtn{
-        padding: 1%;
     }
-    .homebtn:hover{
-        }
     .aboutbtn{
-        justify-content: right;
+        
+        /* padding: 0% 0% 5% 5%; */
     }
 </style>
