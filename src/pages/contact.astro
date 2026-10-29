@@ -1,11 +1,11 @@
  ---
  import Navbar from "../components/Navbar.astro";
  import Contactform from "../components/Contactform.astro";
+ import "../styles/global.css";
 ---
 
 <html lang="en">
 	<head>
-        <link rel="stylesheet" href="style.css">
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
@@ -15,7 +15,8 @@
 	</head>
 	<body>
 		<Navbar></Navbar>
-		<h1 class="contact-heading">Contact plspls</h1>
+		<h1 class="">Contact plspls</h1>
+		<Contactform></Contactform>
 	</body>
-    <Contactform></Contactform>
+    
 </html>

@@ -1,9 +1,0 @@
-*{
-    box-sizing: border-box;
-}
-body { margin: 0; }
-
-.contact-heading{
-    display: flex;
-    justify-self: center;
-}

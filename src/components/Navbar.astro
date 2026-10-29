@@ -1,48 +1,19 @@
-<nav>
+---
+import "../styles/global.css";
+---
+
+<nav class="flex justify-between px-4 pr-20 pl-10 text-xl font-bold w-full py-2">
     
-    <a href="/" class="homebtn navbtn">Home</a>
-    <div class="nav-stuff">
-        <a href="/about" class="aboutbtn navbtn">About</a>
-        <a href="/products" class="productsbtn navbtn">Products</a>
-        <a href="/contact" class="contactbtn navbtn">Contact Us</a>
+    
+    <a href="/" class="">KAE Studio</a>
+
+    <div class="flex justify-center gap-20">
+        <a href="/about" class="">About</a>
+        <a href="/products" class="">Products</a>
+        <a href="/contact" class="">Contact Us</a>
     </div>
+
     
 </nav>
-<hr>
 
-<style>
-    *{
-        box-sizing: border-box;
-    }
-    body{
-        margin: 0;
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 1% 2%;
-    }
-    hr{
-        width: 100%;
-        margin: 0;
-    }
-    .nav-stuff{
-        display: flex;
-        /* padding: 0 10%; */
-        gap: 10vw;
-    }
-    .navbtn{
-        color: blue;
-        text-decoration: none;
-        /* font-size: 100%; */
-        /* padding: 0 10%; */
-    }
-    .homebtn{
-    }
-    .aboutbtn{
-        
-        /* padding: 0% 0% 5% 5%; */
-    }
-</style>
+<hr class="border-slate-700 m-0 w-full">
