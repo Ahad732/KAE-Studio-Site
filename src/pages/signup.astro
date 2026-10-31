@@ -1,0 +1,62 @@
+---
+import Navbar from "../components/Navbar.astro";
+import styles from "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.icu" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Sign-Up</title>
+    </head>
+    <body>
+        <Navbar/>
+      
+        <div class="body-login">
+            <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="First name"/>
+            </div>
+            <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="Last name"/>
+            </div>
+            
+            <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="email"/>
+            </div>
+            <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="DOB dd/mm/yyyy"/>
+            </div>
+            
+            <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="contact"/>
+            </div>
+            <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="Password" type="password"/>
+            </div>
+             <div class="mt-2">
+                <input
+                    class="w-full border border-green-300 rounded-md"
+                    placeholder="Confirm Password" type="password"/>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+                 <button class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white
+                  rounded-lg ease-in-out ">Sign Up</button>
+            </div>
+        </div>
+    </body>
+</html>
