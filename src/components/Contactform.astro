@@ -2,30 +2,28 @@
 import "../styles/global.css";
 ---
 <!-- amber-900 colour for visualisation of stuff -->
-<div class="container flex mx-auto px-4 items-center bg-amber-900">
+<div class="container flex mx-auto px-4 items-center bg-zinc-950 text-white pt-4 pl-20">
     
 
     <img src="/contact-us-img.png" alt="Ci=ontact us" class="w-1/2">
-    <form class=" gap-4 flex flex-col items-start w-1/2 p-8">
-        <div class="flex flex-col w-3/5">
-        <label for="name" class="py-3">Name</label>
-        <input type="text" name="name" class="border-2 rounded-md px-4 bg-stone-100" required>
+    <form class=" gap-4 flex flex-col items-start w-full p-10">
+        <div class="flex flex-col w-4/5 text-xl">
+        <label for="name" class="py-3 text-xl">Name</label>
+        <input type="text" name="name" class="border-2 rounded-md px-2 bg-zinc-800 border-slate-500" required>
         </div>
 
-        <div class="flex flex-col w-3/5 gap-2">
+        <div class="flex flex-col w-4/5 gap-2 text-xl">
         <label for="email">E-mail</label>
-        <input type="email" name="email" class="border-2 rounded-md px-4 bg-stone-100" required>
+        <input type="email" name="email" class="border-2 rounded-md px-2 bg-zinc-800 border-slate-500" required>
         </div>
 
-        <div class="flex flex-col w-3/5 gap-2">
+        <div class="flex flex-col w-4/5 gap-2 text-xl">
         <label for="msg">Message</label>
-        <textarea name="msg" class="border-2 rounded-md px-4 bg-stone-100"></textarea>
+        <textarea name="msg" class="border-2 rounded-md px-2 bg-zinc-800 border-slate-500 focus:ring-2 focus:ring-slate-500"></textarea>
         </div>
 
-        <div class="flex flex-col gap-2">
-        <button type="submit" class="border-2 rounded-md px-4 bg-stone-100">Submit</button>
+        <div class="flex flex-col gap-2 w-4/5">
+        <button type="submit" class="border-2 rounded-md px-4 py-2 bg-stone-200 text-black border-zinc-700 hover:border-slate-500 hover:ring-2 ">Submit</button>
         </div>
     </form>
-
-
-</div>  
+</div>
