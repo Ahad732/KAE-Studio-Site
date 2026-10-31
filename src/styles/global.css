@@ -9,3 +9,8 @@
         @apply text-2xl;
     }
 }
+
+.Github {
+
+    @apply text-blue-600 no-underline hover:text-blue-800 hover:underline;
+}
