@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -14,38 +15,31 @@ import "../styles/global.css";
 	</head>
 	<body class="bg-black text-white">
 		<Navbar />
-		<div class="w-full bg-[#1e293b] px-8 flex flex-row justify-center text-center rounded-xs">
-			We offer a large range of products such as battery chargers and many
+		<div class="w-full bg-[#1e293b] px-8 py-2 flex flex-row justify-center text-center rounded-xs">
+			We offer a range of products such as battery chargers and many
 			more which can be designed however you want them to be in terms of
-			size, shape and we also provide a service for designing custom PCBs
+			size, shape and we also provide a service for designing custom PCBs.
 		</div>
-		<div class="grid grid-cols-2 bg-black">
+		<div class="grid grid-cols-2 bg-blackp py-4 px-8">
 			<div><img src="/3D-Front.png" /></div>
 
-			<div class="flex flex-col items-center justify-center">
-				<p class="flex justify-center">DC-DC Convertor</p>
-				<p class="flex justify-center">A fixed 5 volt output buck Convertor</p>
-				<p>35$</p>
-				<button class="bg-blue-600 hover:bg-blue-700 text-white w-30 h-10 font-bold rounded-4xl ml-30">Buy Now</button>
+			<div class="flex flex-col items-center justify-center align-center gap-2">
+				<p class="text-4xl font-bold">DC-DC Converter</p>
+				<p class="text-lg">A fixed 5 volt output buck Converter</p>
+				<p class="text-2xl">35$</p>
+				<button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 font-bold rounded-2xl">Buy Now</button>
 			</div>
 		</div>
-
-		<div style="margin-top: 10px;" class="grid grid-cols-2 bg-black">
+		<!-- <hr class="py-2"> -->
+		<div class="grid grid-cols-2 bg-black px-8">
 			<div><img src="/PCB-shop.png" /></div>
-			<div class="flex flex-col items-center justify-center">
-				<h1 class="flex justify-center">Custom PCB Design Service</h1>
-				<h2 class="flex justify-center">
-					We design a custom PCB for you
-				</h2>
-			</div>
-			<div class="flex-col flex  justify-center">
-				<h1 style="margin-left: 50px;">Starting from 20$</h1>
-				
-					<button
-						class="bg-blue-600 hover:bg-blue-700 text-white w-30 h-10
-					font-bold rounded-4xl ml-30 mt-2">Buy Now</button>
-				
+			<div class="flex flex-col items-center justify-center gap-2">
+				<p class="text-4xl font-bold">Custom PCB Design Service</p>
+				<p class="text-lg">We design a custom PCB for you</p>
+				<p class="text-xl">Starting from 20$</p>
+				<button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 font-bold rounded-xl" onclick="window.location.href='contact'">contact for custom quote</button>
 			</div>
 		</div>
+		<Footer></Footer>
 	</body>
 </html>

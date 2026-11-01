@@ -1,6 +1,7 @@
 ---
  import "../styles/global.css";
  import Navbar from "../components/Navbar.astro";
+ import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -12,55 +13,47 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>About us</title>
 	</head>
-	<body class="bg-black text-white">
+	<body class="bg-black text-white text-center">
 		<Navbar></Navbar>
-		<h1>Hi Visitor!!</h1>
-		&nbsp;
-
+		<h1 class="pt-8">Hi Visitor!!</h1>
+		<br>
 		<p>We are teens, brothers and a team, building and discovering new things in the world of Electronics!</p>
 		<p>We are obsessed with Electronics and working on various projects in Hack Club.</p>
-		&nbsp;
-		&nbsp;
-		<h1>Big Brother here!</h1>
-		&nbsp;
-		<h3>Hey I am Keyaan!</h3>
-		&nbsp;
-		<p>I am 18 Year old and a BE EC student. I am studying full time and working on Hack Club projects as a hobby in part time.</p>
-		<p>My intrest in Electronics got me to the Hack Club through social media.</p>
+		<br>
+		<br>
+		<div>
+			<div>
+				<h1>Big Brother here!</h1>
+				<br>
+				<h3>Hey I am Keyaan!</h3>
+				<br>
+				<p>I am 18 Year old and a BE EC student. I am studying full time and working on Hack Club projects as a hobby in part time.</p>
+				<p>My interest in Electronics got me to Hack Club through social media.</p>		
+				<br>
+				<p>I went to Hack Club hardware Hackathon <a class="Github" href="http://fallout.hackclub.com">Fallout</a> in Shenzen, China.</p>
+				<br>
+				<p>You can see my github <a class="Github" href="http://github.com/keyaan-07/">here</a></p>
+				<p> I am also available on slack as <a class="Github" href="https://hackclub.enterprise.slack.com/team/U07DZ6A6CR4">@Keyaan</a></p>
+			</div>
+			<br>
+			<div>
+				<h1>Little Brother</h1>
+				<br>
+				<h3>Hello I am Ahad!</h3>
+				<br>
 
-		&nbsp;
+				<p>I am 13 years old and studying in 7th grade. I got my interest in electronics through my big brother.</p>
+				<p>He is my mentor, my go to person whereever and whenever i am stuck in the electronics projects.</p>
 
-		<p>I went to Hack Club hardware Hackathon <a class="Github" href="http://fallout.hackclub.com">Fallout</a> in Shenzen, China.</p>
+				<br>
+				<p>I am eagerly waiting to board a plane for any of the Hackathon anywhere in the world. Which is yet to be approved by my parents.</p>
 
-		&nbsp;
+				<br>
 
-    
-
-		<p>You can see my github library at <a class="Github" href="http://github.com/keyaan-07/">MyGithub</a></p>
-
-		<p> I am also available on slack as <a class="Github" href="https://hackclub.enterprise.slack.com/team/U07DZ6A6CR4">@Keyaan</a></p>
-<p>-------------------------------</p>
-
-&nbsp;
-
-<h1>Little Brother</h1>
-&nbsp;
-<h3>Hello I am Ahad!</h3>
-&nbsp;
-
-<p>I am 13 years old and studying in 7th grade. I got my interest in electronics through my big brother.</p>
-<p>He is my mentor, my go to person whereever and whenever i am stuck in the electronics projects.</p>
-
-&nbsp;
-<p>I am eagerly waiting to board a plane for any of the Hackathon anywhere in the world. Which is yet to be approved by my parents.</p>
-
-&nbsp;
-
-<p>You can see my github library at <a class="Github" href="http://github.com/ahad732/">MyGithub</a></p>
-<p>I am also available on slack as <a class="Github" href="https://hackclub.enterprise.slack.com/team/U0908H0TN9K">@Ahad</a> </p>
-
-
-&nbsp;
-<p>---------------------------------</p>
+				<p>You can see my github <a class="Github" href="http://github.com/ahad732/">here</a></p>
+				<p class="pb-16">I am also available on slack as <a class="Github" href="https://hackclub.enterprise.slack.com/team/U0908H0TN9K">@Ahad</a></p>
+			</div>
+		</div>
+		<Footer></Footer>
 </body>
 </html>

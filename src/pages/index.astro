@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
 
@@ -18,36 +19,31 @@ import "../styles/global.css";
 		<div>
 			<div class="grid grid-cols-2 w-full p-3 border-2 ">
 
-				<div><img src="/3d-render-isometric.png" style="margin-bottom=100px"/></div>
+				<div><img src="/scicalc.png" style="margin-bottom=100px"/></div>
 
-				<div>
-					<h1 class="flex justify-center">Scicalc</h1>	
-					<h2 class="flex justify-center">This is a custom designed Scientific Calculator</h2>
+				<div class="flex flex-col items-center justify-center">
+					<p class="text-4xl">Scicalc</p>	
+					<p class="text-lg py-1">This is a custom designed Scientific Calculator</p>
 
-					<h2 class="Center">
-						We have designed a custom Scientifc calculator based on the RP2350a mcu 
-					</h2>
-					<h2 class="Center">with custom firmware. It is inspired by texas
-						instrument's ti-84 calculator</h2>
-
-						<h1 style="margin-top: 30px; text-align: center;" class="Github">
-						<a href="https://github.com/Ahad732/Scicalc">Github</a></h1>
+					<p class="text-sm">We have designed a custom Scientifc calculator based on the RP2350a mcu</p>
+					<p class="text-sm">with custom firmware. It is inspired by texas instrument's ti-84 calculator</p>
+					<a href="https://github.com/Ahad732/Scicalc" class="text-3xl text-blue-500 pt-2">Github</a>
 
 				</div>
 			</div>
 
 			<div class="grid grid-cols-2 w-full p-3 border-2">
 
-				<div>  
-					<h1 class="flex justify-center">Spindle</h1>
-					<h2 class="flex justify-center">A e-reader with a e-ink display</h2>
+				<div class="flex flex-col items-center justify-center">  
+					<p class="text-4xl">Spindle</p>
+					<p class="text-lg py-1">A e-reader with a e-ink display</p>
 
-					<h2 class="Center">Spindle is a e-reader inspired by the reading app kindle. It has </h2>
-					<h2 class="Center">a sd-card slot and iot connectivity to download or upload books </h2>
-					<h2 class="Center">from your phone or any other device</h2>
+					<p class="text-sm">Spindle is a e-reader inspired by the reading app kindle. It has </p>
+					<p class="text-sm">a sd-card slot and iot connectivity to download or upload books </p>
+					<p class="text-sm">from your phone or any other device</p>
 
-					<h1 style="margin-top: 30px; text-align: center;" class="Github">
-					<a href="https://github.com/Ahad732/Spindle">Github</a></h1>
+					
+					<a href="https://github.com/Ahad732/Spindle" class="text-blue-500 pt-2 text-3xl">Github</a>
 
 			    </div>
 
@@ -56,19 +52,20 @@ import "../styles/global.css";
 			</div>
 			<div class="grid grid-cols-2 w-full p-3 border-2">
 
-				<div><img src="/PCB.png"/></div>
+				<div><img src="/nssfc.png"/></div>
 
-				<div><h1 class="flex justify-center">NSSFC</h1>
-					<h2 class="flex justify-center ">Not So Simple Flight Controller</h2>
-					<h2 class="Center">Not So Simple Flight Controller is a Drone flight controller which runs on </h2>
-					<h2 class="Center">the stm32f405 mcu. It runs on betaflight firmware which is open-source!</h2>
+				<div class="flex flex-col items-center justify-center">
+					<p class="text-4xl">NSSFC</p>
+					<p class="text-lg py-1">Not So Simple Flight Controller</p>
+					<p class="text-sm">Not So Simple Flight Controller is a Drone flight controller which runs on </p>
+					<p class="text-sm">the stm32f405 mcu. It runs on betaflight firmware which is open-source!</p>
 
-					<h1 style="margin-top: 30px; text-align: center;" class="Github">
-					<a href="https://github.com/Keyaan-07/NSSFC">Github</a></h1>
+					
+					<a href="https://github.com/Keyaan-07/NSSFC" class="text-blue-500 pt-2 text-3xl">Github</a>
 				</div>
 				
 			</div>
 		</div>
-
+		<Footer></Footer>
 	</body>
 </html>
