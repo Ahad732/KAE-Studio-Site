@@ -12,51 +12,38 @@ import styles from "../styles/global.css";
         <meta name="generator" content={Astro.generator} />
         <title>Sign-Up</title>
     </head>
-    <body class="bg-black text-white">
+    <body class="bg-zinc-950">
         <Navbar/>
       
-        <div class="body-signup">
-            <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="First name" required/>
-            </div>
-            <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="Last name" required/>
-            </div>
-            
-            <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="email" required/>
-            </div>
-            <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="DOB dd/mm/yyyy" required/>
-            </div>
-            
-            <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="contact"required/>
-            </div>
-            <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="Password" type="password"required/>
-            </div>
-             <div class="mt-2">
-                <input
-                    class="w-full border border-green-300 rounded-md"
-                    placeholder="Confirm Password" type="password"required/>
-            </div>
-            <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-                 <button class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white
-                  rounded-lg ease-in-out ">Sign Up</button>
-            </div>
+        <div class="w-full flex flex-col items-center justify-center text-white pt-[10vh]">
+                <form action="submit" class="w-1/3 flex flex-col justify-center items-start bg-[#242424] p-8 rounded-xl gap-4">
+                    <div class="flex flex-col text-lg gap-2 w-full">
+                        <label for="firstName" class="">First Name</label>
+                        <input type="text" name="firstName" required class="border-1 bg-[#333333] rounded-lg py-2 border-slate-500 w-full">
+                    </div>
+                    <div class="flex flex-col text-lg gap-2 w-full">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" required class="border-1 border-slate-500 rounded-lg bg-[#333333] py-2 w-full">
+                    </div>
+                    <div class="flex flex-col text-lg gap-2 w-full">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required class="border-1 border-slate-500 rounded-lg bg-[#333333] py-2 w-full">
+                    </div>
+                    <div class="flex flex-col text-lg gap-2 w-full">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" class="border-1 border-slate-500 rounded-lg bg-[#333333] py-2 w-full">
+                    </div>
+                    <div class="flex flex-col text-lg gap-2 w-full">
+                        <label for="cpwd">Confirm Password</label>
+                        <input type="password" name="cpwd" class="border-1 border-slate-500 rounded-lg bg-[#333333] py-2 w-full">
+                    </div>
+                    <div class="flex w-full justify-center py-4">
+                        <button type="submit" class="bg-cyan-500 text-zinc-950 rounded-lg px-8 py-3  hover:bg-cyan-400">Create Account</button>
+                    </div>
+                    <div class=" flex w-full text-sm justify-center">
+                        <p>Already have an account? <a href="/login" class="text-cyan-500">Login Here</a></p>
+                    </div>
+                </form>
         </div>
     </body>
 </html>
