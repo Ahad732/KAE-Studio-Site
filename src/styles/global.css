@@ -13,4 +13,17 @@
 .Github {
 
     @apply text-blue-600 no-underline hover:text-blue-800 hover:underline;
+
+}
+
+.body-login {
+
+@apply px-30 py-30 mx-70 pb-50  border-black border-2;
+
+}
+
+.body-signup {
+
+@apply px-40 py-30 mx-50 pb-30 border-2 border-black
+
 }
