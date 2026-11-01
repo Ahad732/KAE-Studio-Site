@@ -27,3 +27,9 @@
 @apply px-40 py-30 mx-50 pb-30 border-2 border-black
 
 }
+
+.Center {
+
+@apply flex justify-center
+
+}
