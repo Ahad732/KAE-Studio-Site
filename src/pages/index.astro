@@ -1,4 +1,4 @@
- ---
+---
  import Navbar from "../components/Navbar.astro";
  import "../styles/global.css";
 ---
@@ -10,11 +10,34 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>First</title>
+		<title>Home</title>
 	</head>
 	<body>
 		<Navbar></Navbar>
-		<h1>Astro</h1>
-		<p>Hi Astro!!This is the index page!</p>
+		
+		<div>
+			<div class="grid grid-cols-2 w-full p-3 border-2 ">
+				<div><image src="/3d-render-isometric.png" style="margin-bottom=100px"/></div>
+				<div>
+					<h1 class="flex justify-center">
+						Scicalc
+					</h1>	
+					<h2 class="flex justify-center">
+						This is a custom designed Scientific Calculator
+					</h2>
+					<h2>
+						We have designed a custom Scientifc calculator based on the RP2350a mcu with
+						custom firmware. It is inspired by texas instrument's ti-84 calculator
+					</h2>
+
+				</div>
+			</div>
+
+			<div>
+				<div>   </div>
+				<div>   </div>
+			</div>
+		</div>
+
 	</body>
 </html>
